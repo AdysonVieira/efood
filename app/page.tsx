@@ -1,9 +1,13 @@
 import Header from "./_components/header";
+import SearchBar from "./_components/search-bar";
 
 export default function Home() {
   return (
-    <div className="px-5 pt-6">
+    <>
       <Header />
-    </div>
+      <div className="px-5 pt-6">
+        <SearchBar />
+      </div>
+    </>
   );
 }
