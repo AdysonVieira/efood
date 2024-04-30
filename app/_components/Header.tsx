@@ -4,7 +4,7 @@ import { MenuIcon } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="flex justify-between px-5 pt-6">
+    <header className="flex justify-between">
       <Image src={"/efoodlogo.png"} alt="Efood logo" height={40} width={68} />
       <Button variant="ghost">
         <MenuIcon size={20} />
