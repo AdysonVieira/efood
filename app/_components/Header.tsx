@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="flex justify-between px-5 pt-6">
       <Image src={"/efoodlogo.png"} alt="Efood logo" height={40} width={68} />
-      <Button variant="ghost">
+      <Button variant="ghost" size="icon">
         <MenuIcon size={20} />
       </Button>
     </header>
