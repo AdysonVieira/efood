@@ -4,11 +4,11 @@ import ProductCard from "./product-card";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
-interface CarrouselProps {
+interface ProductsCarrouselProps {
   title: string;
 }
 
-const Carrousel = async ({ title }: CarrouselProps) => {
+const ProductsCarrousel = async ({ title }: ProductsCarrouselProps) => {
   const products = await db.product.findMany({
     where: {
       discountPercentage: {
@@ -46,4 +46,4 @@ const Carrousel = async ({ title }: CarrouselProps) => {
   );
 };
 
-export default Carrousel;
+export default ProductsCarrousel;
