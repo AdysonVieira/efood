@@ -18,7 +18,7 @@ interface ProductCardProps {
 }
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <li className="max-w-[150px]">
+    <li className="flex max-w-[150px] flex-col gap-3">
       {/* Card image */}
       <div className="relative h-[150px] w-[150px] overflow-hidden rounded-sm">
         <Image
@@ -29,7 +29,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           className=" aspect-square rounded-sm object-cover"
         />
         <Badge className="absolute left-2 top-2">
-          <ArrowDown size={10} />
+          <ArrowDown size={14} />
           {`${product.discountPercentage}%`}
         </Badge>
       </div>
