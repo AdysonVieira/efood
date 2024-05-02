@@ -1,4 +1,5 @@
 import Banner from "./_components/banner";
+import Carrousel from "./_components/carrousel";
 import CategoryNav from "./_components/category-nav";
 import Header from "./_components/header";
 import SearchBar from "./_components/search-bar";
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="p-5">
         <Banner src="/BannerPizza.png" alt="Banner de desconto para pizza" />
       </div>
+      <Carrousel title="Pratos recomendados" />
     </>
   );
 }
