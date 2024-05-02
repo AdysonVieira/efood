@@ -1,5 +1,5 @@
 import Banner from "./_components/banner";
-import ProductsCarrousel from "./_components/products-ProductsCarrousel";
+import ProductsCarrousel from "./_components/products-carrousel";
 import CategoryNav from "./_components/category-nav";
 import Header from "./_components/header";
 import SearchBar from "./_components/search-bar";
