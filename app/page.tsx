@@ -3,6 +3,7 @@ import ProductsCarrousel from "./_components/products-carrousel";
 import CategoryNav from "./_components/category-nav";
 import Header from "./_components/header";
 import SearchBar from "./_components/search-bar";
+import RestaurantsCarrousel from "./_components/restaurants-carrousel";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
           alt="Banner de desconto para hamburgueres"
         />
       </div>
+      <RestaurantsCarrousel title="Restaurantes recomendados" />
     </>
   );
 }
