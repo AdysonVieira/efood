@@ -4,6 +4,7 @@ import { Badge } from "./ui/badge";
 import { ArrowDown } from "lucide-react";
 import { calculateProductDiscount } from "../_helpers/calculate-product-discount";
 import { formatCurrency } from "../_helpers/format-currency";
+import Link from "next/link";
 
 interface ProductCardProps {
   product: Prisma.ProductGetPayload<{
@@ -18,7 +19,10 @@ interface ProductCardProps {
 }
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <li className="flex max-w-[150px] flex-col gap-3">
+    <Link
+      href={`/products/${product.id}`}
+      className="flex max-w-[150px] flex-col gap-3"
+    >
       {/* Card image */}
       <div className="relative h-[150px] w-[150px] overflow-hidden rounded-sm">
         <Image
@@ -51,7 +55,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           {product.restaurant.name}
         </span>
       </div>
-    </li>
+    </Link>
   );
 };
 
